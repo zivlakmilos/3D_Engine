@@ -6,11 +6,14 @@
 namespace zi
 {
     template<typename T>
-    class ArrayHandler : public BaseResourceHandler<T>
+    class ArrayHandler
     {
     public:
-        ArrayHandler(T *pResource) : BaseResourceHandler<T>(pResource) {};
+        ArrayHandler(T *pResource) : m_pResource(pResource) {};
         virtual ~ArrayHandler(void) { delete[] this->m_pResource; };
+        
+    protected:
+        T *m_pResource;
     };
 }
 
