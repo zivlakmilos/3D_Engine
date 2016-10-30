@@ -44,12 +44,13 @@ include_directories(3rdparty/)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
 # Compiling
-add_library(${PROJECT_NAME}_shared SHARED ${SOURCES})
+add_library(${PROJECT_NAME} SHARED ${SOURCES})
 add_library(${PROJECT_NAME}_static STATIC ${SOURCES})
 
 # Linking
-#target_link_libraries(${PROJECT_NAME} ${LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${LIBRARIES})
 
 # Install
-# TODO: Do command for installing libraries
-
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
+install(DIRECTORY include/engine/ DESTINATION include/zengine)
+install(DIRECTORY 3rdparty/GL/ DESTINATION include/GL)
