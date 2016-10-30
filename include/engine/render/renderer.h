@@ -4,10 +4,10 @@
 #include <GL/glew.h>
 #include <vector>
 
-#include "engine/render/shader.h"
-#include "engine/render/vertexarray.h"
-#include "engine/render/texture.h"
-#include "engine/render/camera.h"
+#include "shader.h"
+#include "vertexarray.h"
+#include "texture.h"
+#include "camera.h"
 
 namespace zi
 {

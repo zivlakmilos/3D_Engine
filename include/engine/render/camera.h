@@ -3,7 +3,7 @@
 
 #include <glm/glm.hpp>
 
-#include "engine/core/constants.h"
+#include "../core/constants.h"
 
 namespace zi
 {

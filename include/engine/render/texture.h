@@ -4,7 +4,7 @@
 #include <string>
 #include <GL/glew.h>
 
-#include "engine/core/pngimage.h"
+#include "../core/pngimage.h"
 
 namespace zi
 {

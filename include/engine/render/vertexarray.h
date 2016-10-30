@@ -5,7 +5,7 @@
 #include <GL/glew.h>
 #include <glm/glm.hpp>
 
-#include "engine/render/shader.h"
+#include "shader.h"
 
 namespace zi
 {

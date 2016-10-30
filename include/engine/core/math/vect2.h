@@ -4,7 +4,7 @@
 #include <ostream>
 #include <cmath>
 
-#include "engine/core/constants.h"
+#include "../constants.h"
 
 namespace zi
 {
