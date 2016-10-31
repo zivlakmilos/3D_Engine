@@ -54,3 +54,4 @@ target_link_libraries(${PROJECT_NAME} ${LIBRARIES})
 install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 install(DIRECTORY include/engine/ DESTINATION include/zengine)
 install(DIRECTORY 3rdparty/GL/ DESTINATION include/GL)
+
