@@ -36,6 +36,14 @@ set(INCLUDE_DIRS
     ${PNG_INCLUDE_DIRS}
 )
 
+# Libraries for linking
+set(LIBRARIES
+    ${OPENGL_LIBRARIES}
+    ${GLEW_LIBRARIES}
+    ${GLFW_STATIC_LIBRARIES}
+    ${PNG_LIBRARIES}
+)
+
 # Configuration
 include_directories(${INCLUDE_DIRS})
 include_directories(include/)
@@ -54,4 +62,3 @@ target_link_libraries(${PROJECT_NAME} ${LIBRARIES})
 install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 install(DIRECTORY include/engine/ DESTINATION include/zengine)
 install(DIRECTORY 3rdparty/GL/ DESTINATION include/GL)
-
